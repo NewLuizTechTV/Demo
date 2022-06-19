@@ -1,0 +1,1062 @@
+local Place = 8560631822
+local Place2 = 6872274481
+local Place3 = 8444591321
+
+if game.PlaceId == Place then
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandLittleBrother/SytroNight4ROBLOX/patch-1/libraries/kavo.lua"))()
+local Window = Library.CreateLib("BedWars", "DarkTheme")
+
+
+
+local Hub = Window:NewTab("Game")
+
+
+
+local HubSection = Hub:NewSection("BedWars")
+
+
+HubSection:NewButton("RektSky", "By Moerii", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/mainscript.lua"))()
+end)
+
+HubSection:NewButton("KeyBoard", "Just A Keyboard", function()
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+local KeyboardguiWarriorRoberrVersion = Instance.new("ScreenGui")
+local Drag = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+
+--Properties:
+
+KeyboardguiWarriorRoberrVersion.Name = "Keyboard gui WarriorRoberr Version"
+KeyboardguiWarriorRoberrVersion.Parent = game.CoreGui
+KeyboardguiWarriorRoberrVersion.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Drag.Name = "Drag"
+Drag.Parent = KeyboardguiWarriorRoberrVersion
+Drag.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Drag.BorderSizePixel = 0
+Drag.Position = UDim2.new(0.147916675, 0, 0.0593749993, 0)
+Drag.Size = UDim2.new(0, 270, 0, 30)
+Drag.Active = true
+Drag.Draggable = true
+
+Close.Name = "Close"
+Close.Parent = Drag
+Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.999839723, 0, -0.00729167089, 0)
+Close.Size = UDim2.new(0, 30, 0, 30)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 35.000
+Close.MouseButton1Click:Connect(function()
+	KeyboardguiWarriorRoberrVersion:Destroy()
+end)
+game.CoreGui["BUNB0yBUN BOARD"].KeyBoard.Parent = Drag
+game.CoreGui["BUNB0yBUN BOARD"]:Destroy()
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Bunb0ybun.Text = "MADE BY WARRIORROBERR BETTER VERSION "
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Position = UDim2.new(0, 0, 0, 35)
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Bunb0ybun.TextSize = 10
+end)
+
+HubSection:NewButton("Future", "By Engo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
+end)
+
+HubSection:NewButton("Rise/Vape Cover", "By Syctro For Fixing", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/RiseForRoblox/main/main.lua", true))()
+end)
+
+HubSection:NewButton("SyctroNight", "By SVamp", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandLittleBrother/SytroNight4ROBLOX/main/scripts/bedwars.lua", true))()
+end)
+
+HubSection:NewButton("Vape V4", "7GrandDad", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Error-virus/holy-arceus-x-working-vape-v4/main/vape%20v4%20fixed%20version.lua", true))()
+end)
+
+HubSection:NewButton("Monkey Hub V4 《Patched》", "7GrandDad But Patched", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+HubSection:NewButton("JN HH Gaming V7", "Masterpiece", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming123/JN-Bedwars-V7/main/JN%20Bedwars%20V7",true))()
+end)
+
+HubSection:NewButton("SoftBed", "By YZHacker", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/YZHacker0/BedwarsGUI/main/bad.lua", true))()
+end)
+
+HubSection:NewButton("Reduce AntiCheat", "AntiCheat Bypass", function()
+local player = game.Players.LocalPlayer
+	repeat
+		wait()
+	until player:FindFirstChild("Backpack")
+	local Connection = game.DescendantAdded:Connect(function(Inst)
+		local Success, Error = pcall(function()
+			return Inst.DisplayOrder
+		end)
+		if tostring(Inst) ~= "DevConsoleMaster" and tostring(Inst) ~= "InputCatcher" and Error == "The current identity (2) cannot Class security check (lacking permission 1)" then
+			while true do
+			end
+		end
+	end)
+	local toSave = {}
+	local function saveScript(saved)
+		toSave[saved] = true
+		local storedName = saved.Name
+		saved:GetPropertyChangedSignal("Disabled"):connect(function()
+			if saved.Disabled then
+				local robloxlocked = pcall(function()
+					saved.Disabled = false
+				end)
+				if not robloxlocked then
+					while true do
+					end
+				end
+			end
+		end)
+		saved:GetPropertyChangedSignal("Name"):connect(function()
+			saved.Name = storedName
+		end)
+	end
+	for _, v in pairs(script.Parent:GetChildren()) do
+		if v:IsA("LocalScript") and (v.Name == "check" or v.Name == "checkDo") and v ~= script then
+			saveScript(v)
+		end
+	end
+	script.Parent.ChildRemoved:connect(function(child)
+		if toSave[child] then
+			local saved, cloned = pcall(function()
+				return child:Clone()
+			end)
+			if saved then
+				cloned.Parent = script.Parent
+				saveScript(cloned)
+			else
+				while true do
+				end
+			end
+		end
+	end)
+	local setUpCharacter = function(char)
+		wait(5)
+		for _, v in pairs(char:GetDescendants()) do
+			if v:IsA("BasePart") and v:FindFirstChildOfClass("TouchTransmitter") then
+				while true do
+				end
+			elseif v:IsA("BasePart") then
+				v.ChildAdded:connect(function(child)
+					if child:IsA("TouchTransmitter") then
+						while true do
+						end
+					end
+				end)
+			end
+		end
+		char:WaitForChild("HumanoidRootPart"):GetPropertyChangedSignal("CFrame"):connect(function()
+			while true do
+			end
+		end)
+	end
+	if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+		wait(5)
+		setUpCharacter(player.Character)
+	end
+	player.CharacterAdded:connect(function(char)
+		wait(5)
+		setUpCharacter(char)
+	end)
+	player.Backpack.ChildAdded:Connect(function(added)
+		local toolCount = 0
+		for i, v in pairs(player.Backpack:GetChildren()) do
+			if v:IsA("Tool") then
+				toolCount = toolCount + 1
+			end
+		end
+		for i, v in pairs(player.Character:GetChildren()) do
+			if v:IsA("Tool") then
+				toolCount = toolCount + 1
+			end
+		end
+		for i, v in pairs(player:GetChildren()) do
+			if v:IsA("Tool") then
+				toolCount = toolCount + 1
+			end
+		end
+		if toolCount > 2 then
+			while true do
+			end
+		end
+	end)
+    print("MaxLaser")
+end)
+
+HubSection:NewButton("Snick AntiCheatBypass", "AntiCheat Bypass", function()
+local player = game.Players.LocalPlayer local character = player.Character local humanoid = character:WaitForChild('Humanoid') local head = character:WaitForChild('Head') local base = game.Workspace.Baseplate local fall = false local value = nil local value2 = nil local value3 = nil humanoid.StateChanged:connect(function(state) 	if state == Enum.HumanoidStateType.Jumping then 	fall = true 	value = head.CFrame.Y - base.CFrame.Y 	elseif state == Enum.HumanoidStateType.Running or state == Enum.HumanoidStateType.RunningNoPhysics then 		value = head.CFrame.Y - base.CFrame.Y 	elseif state == Enum.HumanoidStateType.Freefall then 		fall = true 	elseif state == Enum.HumanoidStateType.Landed then 		if fall == true then 			value2 = head.CFrame.Y - base.CFrame.Y 			value3 = value - value2 			if value3 > 29 then 				fall = false 				value3 = nil 				humanoid:TakeDamage(30) 			
+end 		
+end 	
+end 
+end)
+    print("...")
+end)
+
+HubSection:NewButton("MoonLight By NTD For Refusing", "MoonLight", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NTDCore/MoonLight/main/MoonlightScript.lua", true))()
+    print("...")
+end)
+
+HubSection:NewButton("Inf Yield", "Inf Yield", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    print("...")
+end)
+
+HubSection:NewButton("Full Bright", "Full Bright", function()
+game.Lighting.FogEnd = 10000000000000000000000
+game.Lighting.FogStart = 0
+game.Lighting.ClockTime = 14
+game.Lighting.Brightness = 20
+game.Lighting.GlobalShadows = true
+    print("...")
+end)
+
+HubSection:NewButton("Uniez Hub", "D", function()
+    -- Re Made by UniezRblx
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local Text = Instance.new("TextButton")
+local Te = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+--Properties:
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.new(0, 0, 0)
+main.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0)
+main.Size = UDim2.new(0, 332, 0, 211)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.new(1, 0, 1)
+title.Size = UDim2.new(0, 332, 0, 31)
+title.Font = Enum.Font.GothamBold
+title.Text = "Hi Welcome"
+title.TextColor3 = Color3.new(0, 0, 0)
+title.TextSize = 14
+
+Text.Name = "Text"
+Text.Parent = main
+Text.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+Text.Position = UDim2.new(0.036144577, 0, 0.379146934, 0)
+Text.Size = UDim2.new(0, 110, 0, 50)
+Text.Font = Enum.Font.GothamBold
+Text.Text = "Bed Wars"
+Text.TextColor3 = Color3.new(0, 0, 0)
+Text.TextScaled = true
+Text.TextSize = 10
+Text.TextWrapped = true
+Text.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
+end)
+
+Te.Name = "Te"
+Te.Parent = main
+Te.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+Te.Position = UDim2.new(0.614457846, 0, 0.379146934, 0)
+Te.Size = UDim2.new(0, 110, 0, 50)
+Te.Font = Enum.Font.GothamBold
+Te.Text = "Bed Wars Gui"
+Te.TextColor3 = Color3.new(0, 0, 0)
+Te.TextScaled = true
+Te.TextSize = 14
+Te.TextWrapped = true
+Te.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/BGKCidWh",true))()
+end)
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.new(1, 0, 0)
+close.Position = UDim2.new(0.879518092, 0, 0, 0)
+close.Size = UDim2.new(0, 40, 0, 31)
+close.Font = Enum.Font.GothamBlack
+close.Text = "Close"
+close.TextColor3 = Color3.new(0, 0, 0)
+close.TextScaled = true
+close.TextSize = 14
+close.TextWrapped = true
+close.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.new(1, 1, 1)
+openmain.Position = UDim2.new(0.00801973976, 0, 0.423832953, 0)
+openmain.Size = UDim2.new(0, 100, 0, 28)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.new(1, 0, 0)
+open.Size = UDim2.new(0, 100, 0, 28)
+open.Font = Enum.Font.GothamBold
+open.Text = "Open"
+open.TextColor3 = Color3.new(0, 0, 0)
+open.TextSize = 18
+open.TextWrapped = true
+open.MouseButton1Down:connect(function()
+openmain.Visible = false
+main.Visible = true
+end)
+end)
+
+HubSection:NewButton("LightBed [Derpy Bread]", "LightBed", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/MLE49Z3R",true))()
+end)
+
+HubSection:NewButton("Lithium Light", "By Derpy Bread", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/dorukqpx/Xrayon/main/xrayonv2.lua", true))()
+end)
+
+HubSection:NewButton("Noon Bed", "By Derpy Bread", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/idi4WLnF", true))()
+end)
+
+HubSection:NewButton("NightBed", "By NTD [Sans]", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NTDCore/NightbedX/main/NightbedScriptLol/mostNightbed.lua", true))()
+end)
+
+
+HubSection:NewButton("MoonLight Modded", "Bruh", function()
+    loadstring(game:HttpGet("https://cdn.discordapp.com/attachments/988132393292558366/988132487807000596/out.lua", true))()
+end)
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Notification";
+    Text = "Bedwars Detected"; -- what the text says (ofc)
+    Duration = 5;
+})
+end
+
+if game.PlaceId == Place2 then
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandLittleBrother/SytroNight4ROBLOX/patch-1/libraries/kavo.lua"))()
+local Window = Library.CreateLib("BedWars", "DarkTheme")
+
+
+
+local Hub = Window:NewTab("Game")
+
+
+
+local HubSection = Hub:NewSection("BedWars")
+
+
+HubSection:NewButton("RektSky", "By Moerii", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/mainscript.lua"))()
+end)
+
+HubSection:NewButton("KeyBoard", "Just A Keyboard", function()
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+local KeyboardguiWarriorRoberrVersion = Instance.new("ScreenGui")
+local Drag = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+
+--Properties:
+
+KeyboardguiWarriorRoberrVersion.Name = "Keyboard gui WarriorRoberr Version"
+KeyboardguiWarriorRoberrVersion.Parent = game.CoreGui
+KeyboardguiWarriorRoberrVersion.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Drag.Name = "Drag"
+Drag.Parent = KeyboardguiWarriorRoberrVersion
+Drag.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Drag.BorderSizePixel = 0
+Drag.Position = UDim2.new(0.147916675, 0, 0.0593749993, 0)
+Drag.Size = UDim2.new(0, 270, 0, 30)
+Drag.Active = true
+Drag.Draggable = true
+
+Close.Name = "Close"
+Close.Parent = Drag
+Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.999839723, 0, -0.00729167089, 0)
+Close.Size = UDim2.new(0, 30, 0, 30)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 35.000
+Close.MouseButton1Click:Connect(function()
+	KeyboardguiWarriorRoberrVersion:Destroy()
+end)
+game.CoreGui["BUNB0yBUN BOARD"].KeyBoard.Parent = Drag
+game.CoreGui["BUNB0yBUN BOARD"]:Destroy()
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Bunb0ybun.Text = "MADE BY WARRIORROBERR BETTER VERSION "
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Position = UDim2.new(0, 0, 0, 35)
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Bunb0ybun.TextSize = 10
+end)
+
+HubSection:NewButton("Future", "By Engo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
+end)
+
+HubSection:NewButton("Rise/Vape Cover", "By Syctro For Fixing", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/RiseForRoblox/main/main.lua", true))()
+end)
+
+HubSection:NewButton("SyctroNight", "By SVamp", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandLittleBrother/SytroNight4ROBLOX/main/scripts/bedwars.lua", true))()
+end)
+
+HubSection:NewButton("Vape V4", "7GrandDad", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Error-virus/holy-arceus-x-working-vape-v4/main/vape%20v4%20fixed%20version.lua", true))()
+end)
+
+HubSection:NewButton("Monkey Hub V4 《Patched》", "7GrandDad But Patched", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+HubSection:NewButton("JN HH Gaming V7", "Masterpiece", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming123/JN-Bedwars-V7/main/JN%20Bedwars%20V7",true))()
+end)
+
+HubSection:NewButton("SoftBed", "By YZHacker", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/YZHacker0/BedwarsGUI/main/bad.lua", true))()
+end)
+
+HubSection:NewButton("Reduce AntiCheat", "AntiCheat Bypass", function()
+local player = game.Players.LocalPlayer
+	repeat
+		wait()
+	until player:FindFirstChild("Backpack")
+	local Connection = game.DescendantAdded:Connect(function(Inst)
+		local Success, Error = pcall(function()
+			return Inst.DisplayOrder
+		end)
+		if tostring(Inst) ~= "DevConsoleMaster" and tostring(Inst) ~= "InputCatcher" and Error == "The current identity (2) cannot Class security check (lacking permission 1)" then
+			while true do
+			end
+		end
+	end)
+	local toSave = {}
+	local function saveScript(saved)
+		toSave[saved] = true
+		local storedName = saved.Name
+		saved:GetPropertyChangedSignal("Disabled"):connect(function()
+			if saved.Disabled then
+				local robloxlocked = pcall(function()
+					saved.Disabled = false
+				end)
+				if not robloxlocked then
+					while true do
+					end
+				end
+			end
+		end)
+		saved:GetPropertyChangedSignal("Name"):connect(function()
+			saved.Name = storedName
+		end)
+	end
+	for _, v in pairs(script.Parent:GetChildren()) do
+		if v:IsA("LocalScript") and (v.Name == "check" or v.Name == "checkDo") and v ~= script then
+			saveScript(v)
+		end
+	end
+	script.Parent.ChildRemoved:connect(function(child)
+		if toSave[child] then
+			local saved, cloned = pcall(function()
+				return child:Clone()
+			end)
+			if saved then
+				cloned.Parent = script.Parent
+				saveScript(cloned)
+			else
+				while true do
+				end
+			end
+		end
+	end)
+	local setUpCharacter = function(char)
+		wait(5)
+		for _, v in pairs(char:GetDescendants()) do
+			if v:IsA("BasePart") and v:FindFirstChildOfClass("TouchTransmitter") then
+				while true do
+				end
+			elseif v:IsA("BasePart") then
+				v.ChildAdded:connect(function(child)
+					if child:IsA("TouchTransmitter") then
+						while true do
+						end
+					end
+				end)
+			end
+		end
+		char:WaitForChild("HumanoidRootPart"):GetPropertyChangedSignal("CFrame"):connect(function()
+			while true do
+			end
+		end)
+	end
+	if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+		wait(5)
+		setUpCharacter(player.Character)
+	end
+	player.CharacterAdded:connect(function(char)
+		wait(5)
+		setUpCharacter(char)
+	end)
+	player.Backpack.ChildAdded:Connect(function(added)
+		local toolCount = 0
+		for i, v in pairs(player.Backpack:GetChildren()) do
+			if v:IsA("Tool") then
+				toolCount = toolCount + 1
+			end
+		end
+		for i, v in pairs(player.Character:GetChildren()) do
+			if v:IsA("Tool") then
+				toolCount = toolCount + 1
+			end
+		end
+		for i, v in pairs(player:GetChildren()) do
+			if v:IsA("Tool") then
+				toolCount = toolCount + 1
+			end
+		end
+		if toolCount > 2 then
+			while true do
+			end
+		end
+	end)
+    print("MaxLaser")
+end)
+
+HubSection:NewButton("Snick AntiCheatBypass", "AntiCheat Bypass", function()
+local player = game.Players.LocalPlayer local character = player.Character local humanoid = character:WaitForChild('Humanoid') local head = character:WaitForChild('Head') local base = game.Workspace.Baseplate local fall = false local value = nil local value2 = nil local value3 = nil humanoid.StateChanged:connect(function(state) 	if state == Enum.HumanoidStateType.Jumping then 	fall = true 	value = head.CFrame.Y - base.CFrame.Y 	elseif state == Enum.HumanoidStateType.Running or state == Enum.HumanoidStateType.RunningNoPhysics then 		value = head.CFrame.Y - base.CFrame.Y 	elseif state == Enum.HumanoidStateType.Freefall then 		fall = true 	elseif state == Enum.HumanoidStateType.Landed then 		if fall == true then 			value2 = head.CFrame.Y - base.CFrame.Y 			value3 = value - value2 			if value3 > 29 then 				fall = false 				value3 = nil 				humanoid:TakeDamage(30) 			
+end 		
+end 	
+end 
+end)
+    print("...")
+end)
+
+HubSection:NewButton("MoonLight By NTD For Refusing", "MoonLight", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NTDCore/MoonLight/main/MoonlightScript.lua", true))()
+    print("...")
+end)
+
+HubSection:NewButton("Inf Yield", "Inf Yield", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    print("...")
+end)
+
+HubSection:NewButton("Full Bright", "Full Bright", function()
+game.Lighting.FogEnd = 10000000000000000000000
+game.Lighting.FogStart = 0
+game.Lighting.ClockTime = 14
+game.Lighting.Brightness = 20
+game.Lighting.GlobalShadows = true
+    print("...")
+end)
+
+HubSection:NewButton("Uniez Hub", "D", function()
+    -- Re Made by UniezRblx
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local Text = Instance.new("TextButton")
+local Te = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+--Properties:
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.new(0, 0, 0)
+main.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0)
+main.Size = UDim2.new(0, 332, 0, 211)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.new(1, 0, 1)
+title.Size = UDim2.new(0, 332, 0, 31)
+title.Font = Enum.Font.GothamBold
+title.Text = "Hi Welcome"
+title.TextColor3 = Color3.new(0, 0, 0)
+title.TextSize = 14
+
+Text.Name = "Text"
+Text.Parent = main
+Text.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+Text.Position = UDim2.new(0.036144577, 0, 0.379146934, 0)
+Text.Size = UDim2.new(0, 110, 0, 50)
+Text.Font = Enum.Font.GothamBold
+Text.Text = "Bed Wars"
+Text.TextColor3 = Color3.new(0, 0, 0)
+Text.TextScaled = true
+Text.TextSize = 10
+Text.TextWrapped = true
+Text.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
+end)
+
+Te.Name = "Te"
+Te.Parent = main
+Te.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+Te.Position = UDim2.new(0.614457846, 0, 0.379146934, 0)
+Te.Size = UDim2.new(0, 110, 0, 50)
+Te.Font = Enum.Font.GothamBold
+Te.Text = "Bed Wars Gui"
+Te.TextColor3 = Color3.new(0, 0, 0)
+Te.TextScaled = true
+Te.TextSize = 14
+Te.TextWrapped = true
+Te.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/BGKCidWh",true))()
+end)
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.new(1, 0, 0)
+close.Position = UDim2.new(0.879518092, 0, 0, 0)
+close.Size = UDim2.new(0, 40, 0, 31)
+close.Font = Enum.Font.GothamBlack
+close.Text = "Close"
+close.TextColor3 = Color3.new(0, 0, 0)
+close.TextScaled = true
+close.TextSize = 14
+close.TextWrapped = true
+close.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.new(1, 1, 1)
+openmain.Position = UDim2.new(0.00801973976, 0, 0.423832953, 0)
+openmain.Size = UDim2.new(0, 100, 0, 28)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.new(1, 0, 0)
+open.Size = UDim2.new(0, 100, 0, 28)
+open.Font = Enum.Font.GothamBold
+open.Text = "Open"
+open.TextColor3 = Color3.new(0, 0, 0)
+open.TextSize = 18
+open.TextWrapped = true
+open.MouseButton1Down:connect(function()
+openmain.Visible = false
+main.Visible = true
+end)
+end)
+
+HubSection:NewButton("LightBed [Derpy Bread]", "LightBed", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/MLE49Z3R",true))()
+end)
+
+HubSection:NewButton("Lithium Light", "By Derpy Bread", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/dorukqpx/Xrayon/main/xrayonv2.lua", true))()
+end)
+
+HubSection:NewButton("Noon Bed", "By Derpy Bread", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/idi4WLnF", true))()
+end)
+
+HubSection:NewButton("NightBed", "By NTD [Sans]", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NTDCore/NightbedX/main/NightbedScriptLol/mostNightbed.lua", true))()
+end)
+
+
+HubSection:NewButton("MoonLight Modded", "Bruh", function()
+    loadstring(game:HttpGet("https://cdn.discordapp.com/attachments/988132393292558366/988132487807000596/out.lua", true))()
+end)
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Notification";
+    Text = "Bedwars Detected"; -- what the text says (ofc)
+    Duration = 5;
+})
+end
+
+if game.PlaceId == Place3 then
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandLittleBrother/SytroNight4ROBLOX/patch-1/libraries/kavo.lua"))()
+local Window = Library.CreateLib("BedWars", "DarkTheme")
+
+
+
+local Hub = Window:NewTab("Game")
+
+
+
+local HubSection = Hub:NewSection("BedWars")
+
+
+HubSection:NewButton("RektSky", "By Moerii", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/mainscript.lua"))()
+end)
+
+HubSection:NewButton("KeyBoard", "Just A Keyboard", function()
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+local KeyboardguiWarriorRoberrVersion = Instance.new("ScreenGui")
+local Drag = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+
+--Properties:
+
+KeyboardguiWarriorRoberrVersion.Name = "Keyboard gui WarriorRoberr Version"
+KeyboardguiWarriorRoberrVersion.Parent = game.CoreGui
+KeyboardguiWarriorRoberrVersion.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Drag.Name = "Drag"
+Drag.Parent = KeyboardguiWarriorRoberrVersion
+Drag.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Drag.BorderSizePixel = 0
+Drag.Position = UDim2.new(0.147916675, 0, 0.0593749993, 0)
+Drag.Size = UDim2.new(0, 270, 0, 30)
+Drag.Active = true
+Drag.Draggable = true
+
+Close.Name = "Close"
+Close.Parent = Drag
+Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.999839723, 0, -0.00729167089, 0)
+Close.Size = UDim2.new(0, 30, 0, 30)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 35.000
+Close.MouseButton1Click:Connect(function()
+	KeyboardguiWarriorRoberrVersion:Destroy()
+end)
+game.CoreGui["BUNB0yBUN BOARD"].KeyBoard.Parent = Drag
+game.CoreGui["BUNB0yBUN BOARD"]:Destroy()
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Bunb0ybun.Text = "MADE BY WARRIORROBERR BETTER VERSION "
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Position = UDim2.new(0, 0, 0, 35)
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Bunb0ybun.TextSize = 10
+end)
+
+HubSection:NewButton("Future", "By Engo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
+end)
+
+HubSection:NewButton("Rise/Vape Cover", "By Syctro For Fixing", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/RiseForRoblox/main/main.lua", true))()
+end)
+
+HubSection:NewButton("SyctroNight", "By SVamp", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandLittleBrother/SytroNight4ROBLOX/main/scripts/bedwars.lua", true))()
+end)
+
+HubSection:NewButton("Vape V4", "7GrandDad", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Error-virus/holy-arceus-x-working-vape-v4/main/vape%20v4%20fixed%20version.lua", true))()
+end)
+
+HubSection:NewButton("Monkey Hub V4 《Patched》", "7GrandDad But Patched", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+HubSection:NewButton("JN HH Gaming V7", "Masterpiece", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming123/JN-Bedwars-V7/main/JN%20Bedwars%20V7",true))()
+end)
+
+HubSection:NewButton("SoftBed", "By YZHacker", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/YZHacker0/BedwarsGUI/main/bad.lua", true))()
+end)
+
+HubSection:NewButton("Reduce AntiCheat", "AntiCheat Bypass", function()
+local player = game.Players.LocalPlayer
+	repeat
+		wait()
+	until player:FindFirstChild("Backpack")
+	local Connection = game.DescendantAdded:Connect(function(Inst)
+		local Success, Error = pcall(function()
+			return Inst.DisplayOrder
+		end)
+		if tostring(Inst) ~= "DevConsoleMaster" and tostring(Inst) ~= "InputCatcher" and Error == "The current identity (2) cannot Class security check (lacking permission 1)" then
+			while true do
+			end
+		end
+	end)
+	local toSave = {}
+	local function saveScript(saved)
+		toSave[saved] = true
+		local storedName = saved.Name
+		saved:GetPropertyChangedSignal("Disabled"):connect(function()
+			if saved.Disabled then
+				local robloxlocked = pcall(function()
+					saved.Disabled = false
+				end)
+				if not robloxlocked then
+					while true do
+					end
+				end
+			end
+		end)
+		saved:GetPropertyChangedSignal("Name"):connect(function()
+			saved.Name = storedName
+		end)
+	end
+	for _, v in pairs(script.Parent:GetChildren()) do
+		if v:IsA("LocalScript") and (v.Name == "check" or v.Name == "checkDo") and v ~= script then
+			saveScript(v)
+		end
+	end
+	script.Parent.ChildRemoved:connect(function(child)
+		if toSave[child] then
+			local saved, cloned = pcall(function()
+				return child:Clone()
+			end)
+			if saved then
+				cloned.Parent = script.Parent
+				saveScript(cloned)
+			else
+				while true do
+				end
+			end
+		end
+	end)
+	local setUpCharacter = function(char)
+		wait(5)
+		for _, v in pairs(char:GetDescendants()) do
+			if v:IsA("BasePart") and v:FindFirstChildOfClass("TouchTransmitter") then
+				while true do
+				end
+			elseif v:IsA("BasePart") then
+				v.ChildAdded:connect(function(child)
+					if child:IsA("TouchTransmitter") then
+						while true do
+						end
+					end
+				end)
+			end
+		end
+		char:WaitForChild("HumanoidRootPart"):GetPropertyChangedSignal("CFrame"):connect(function()
+			while true do
+			end
+		end)
+	end
+	if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+		wait(5)
+		setUpCharacter(player.Character)
+	end
+	player.CharacterAdded:connect(function(char)
+		wait(5)
+		setUpCharacter(char)
+	end)
+	player.Backpack.ChildAdded:Connect(function(added)
+		local toolCount = 0
+		for i, v in pairs(player.Backpack:GetChildren()) do
+			if v:IsA("Tool") then
+				toolCount = toolCount + 1
+			end
+		end
+		for i, v in pairs(player.Character:GetChildren()) do
+			if v:IsA("Tool") then
+				toolCount = toolCount + 1
+			end
+		end
+		for i, v in pairs(player:GetChildren()) do
+			if v:IsA("Tool") then
+				toolCount = toolCount + 1
+			end
+		end
+		if toolCount > 2 then
+			while true do
+			end
+		end
+	end)
+    print("MaxLaser")
+end)
+
+HubSection:NewButton("Snick AntiCheatBypass", "AntiCheat Bypass", function()
+local player = game.Players.LocalPlayer local character = player.Character local humanoid = character:WaitForChild('Humanoid') local head = character:WaitForChild('Head') local base = game.Workspace.Baseplate local fall = false local value = nil local value2 = nil local value3 = nil humanoid.StateChanged:connect(function(state) 	if state == Enum.HumanoidStateType.Jumping then 	fall = true 	value = head.CFrame.Y - base.CFrame.Y 	elseif state == Enum.HumanoidStateType.Running or state == Enum.HumanoidStateType.RunningNoPhysics then 		value = head.CFrame.Y - base.CFrame.Y 	elseif state == Enum.HumanoidStateType.Freefall then 		fall = true 	elseif state == Enum.HumanoidStateType.Landed then 		if fall == true then 			value2 = head.CFrame.Y - base.CFrame.Y 			value3 = value - value2 			if value3 > 29 then 				fall = false 				value3 = nil 				humanoid:TakeDamage(30) 			
+end 		
+end 	
+end 
+end)
+    print("...")
+end)
+
+HubSection:NewButton("MoonLight By NTD For Refusing", "MoonLight", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NTDCore/MoonLight/main/MoonlightScript.lua", true))()
+    print("...")
+end)
+
+HubSection:NewButton("Inf Yield", "Inf Yield", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    print("...")
+end)
+
+HubSection:NewButton("Full Bright", "Full Bright", function()
+game.Lighting.FogEnd = 10000000000000000000000
+game.Lighting.FogStart = 0
+game.Lighting.ClockTime = 14
+game.Lighting.Brightness = 20
+game.Lighting.GlobalShadows = true
+    print("...")
+end)
+
+HubSection:NewButton("Uniez Hub", "D", function()
+    -- Re Made by UniezRblx
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local Text = Instance.new("TextButton")
+local Te = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+--Properties:
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.new(0, 0, 0)
+main.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0)
+main.Size = UDim2.new(0, 332, 0, 211)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.new(1, 0, 1)
+title.Size = UDim2.new(0, 332, 0, 31)
+title.Font = Enum.Font.GothamBold
+title.Text = "Hi Welcome"
+title.TextColor3 = Color3.new(0, 0, 0)
+title.TextSize = 14
+
+Text.Name = "Text"
+Text.Parent = main
+Text.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+Text.Position = UDim2.new(0.036144577, 0, 0.379146934, 0)
+Text.Size = UDim2.new(0, 110, 0, 50)
+Text.Font = Enum.Font.GothamBold
+Text.Text = "Bed Wars"
+Text.TextColor3 = Color3.new(0, 0, 0)
+Text.TextScaled = true
+Text.TextSize = 10
+Text.TextWrapped = true
+Text.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
+end)
+
+Te.Name = "Te"
+Te.Parent = main
+Te.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+Te.Position = UDim2.new(0.614457846, 0, 0.379146934, 0)
+Te.Size = UDim2.new(0, 110, 0, 50)
+Te.Font = Enum.Font.GothamBold
+Te.Text = "Bed Wars Gui"
+Te.TextColor3 = Color3.new(0, 0, 0)
+Te.TextScaled = true
+Te.TextSize = 14
+Te.TextWrapped = true
+Te.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/BGKCidWh",true))()
+end)
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.new(1, 0, 0)
+close.Position = UDim2.new(0.879518092, 0, 0, 0)
+close.Size = UDim2.new(0, 40, 0, 31)
+close.Font = Enum.Font.GothamBlack
+close.Text = "Close"
+close.TextColor3 = Color3.new(0, 0, 0)
+close.TextScaled = true
+close.TextSize = 14
+close.TextWrapped = true
+close.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.new(1, 1, 1)
+openmain.Position = UDim2.new(0.00801973976, 0, 0.423832953, 0)
+openmain.Size = UDim2.new(0, 100, 0, 28)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.new(1, 0, 0)
+open.Size = UDim2.new(0, 100, 0, 28)
+open.Font = Enum.Font.GothamBold
+open.Text = "Open"
+open.TextColor3 = Color3.new(0, 0, 0)
+open.TextSize = 18
+open.TextWrapped = true
+open.MouseButton1Down:connect(function()
+openmain.Visible = false
+main.Visible = true
+end)
+end)
+
+HubSection:NewButton("LightBed [Derpy Bread]", "LightBed", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/MLE49Z3R",true))()
+end)
+
+HubSection:NewButton("Lithium Light", "By Derpy Bread", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/dorukqpx/Xrayon/main/xrayonv2.lua", true))()
+end)
+
+HubSection:NewButton("Noon Bed", "By Derpy Bread", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/idi4WLnF", true))()
+end)
+
+HubSection:NewButton("NightBed", "By NTD [Sans]", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NTDCore/NightbedX/main/NightbedScriptLol/mostNightbed.lua", true))()
+end)
+
+
+HubSection:NewButton("MoonLight Modded", "Bruh", function()
+    loadstring(game:HttpGet("https://cdn.discordapp.com/attachments/988132393292558366/988132487807000596/out.lua", true))()
+end)
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Notification";
+    Text = "Bedwars Detected"; -- what the text says (ofc)
+    Duration = 5;
+})
+end
